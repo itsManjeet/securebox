@@ -1,6 +1,6 @@
 {
     "name": "container",
-    "roots": "rootfs",
+    "roots": "../roots",
     "shared": [
         "ns",
         "pid",
@@ -11,5 +11,5 @@
     ],
     "maxpids": "10",
 
-    "startup": ["/bin/ls"]
+    "startup": ["/bin/bash"]
 }

@@ -81,7 +81,7 @@ func child(boxConfig SecureBoxConfig) {
 
 	log.Println("switching roots")
 
-	if err := syscall.Chroot("roots"); err != nil {
+	if err := syscall.Chroot(boxConfig.Roots); err != nil {
 		log.Println("error while switching root", err)
 		os.Exit(1)
 	}
