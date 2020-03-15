@@ -1,0 +1,15 @@
+{
+    "name": "container",
+    "roots": "rootfs",
+    "shared": [
+        "ns",
+        "pid",
+        "uts"
+    ],
+    "unshared": [
+        "ns"
+    ],
+    "maxpids": "10",
+
+    "startup": ["/bin/ls"]
+}
